@@ -3,367 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio van Angel Lin - Graduaat Digitale Vormgever 2025-2026. Bekijk mijn projecten, documenten en hobbies.">
-    <meta name="keywords" content="Angel Lin, Portfolio, Digitale Vormgever, Web Development, Design">
-    <meta name="author" content="Angel Lin">
-    <title>Angel Lin - Portfolio | Digitale Vormgever</title>
-    <link href="asset/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Portfolio website van Angel Lin - Graphic Designer.">
+    <title>Angel Lin | Graphic Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="index_css.css?v=20260112-1" rel="stylesheet">
+    <link href="index_css.css?v=20260529-1" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 <body>
-<header class="site-nav">
-    <div class="container nav-inner">
-        <div class="nav-profile">
-            <a class="nav-brand" href="#hero">
-                <img alt="Profiel foto van Angel Lin" class="nav-avatar" src="asset/foto_mijzelf.jpg">
-                <span>Angel Lin</span>
-            </a>
-            <button aria-expanded="false" aria-haspopup="true" aria-label="Open profiel menu" class="profile-toggle">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="profile-menu" role="menu">
-                <a href="#intro" role="menuitem">Introductie vooruit</a>
-                <a href="#school-project" role="menuitem">School Project</a>
-                <a href="#niet-school-project" role="menuitem">Niet-school Project</a>
-                <a href="#hobbies" role="menuitem">Hobbies</a>
-                <a href="#gallery" role="menuitem">Fotogalerij</a>
-                <a href="#portfolio" role="menuitem">Portfolio</a>
-                <a href="#footer" role="menuitem">Footer</a>
-            </div>
-        </div>
-    </div>
+<header class="site-header" id="home">
+    <nav class="navbar container">
+        <a class="logo" href="#home">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Angel Lin</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">Over mij</a></li>
+            <li><a href="#vaardigheden">Vaardigheden</a></li>
+            <li><a href="#projecten">Projecten</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#gallery">Fotogalerij</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+
+        <a class="btn contact-btn" href="mailto:angel.lin@student.pxl.be">
+            Contact opnemen
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </nav>
 </header>
 
-<!-- MAIN: Hoofd content van de pagina -->
-<main>
-    <!-- Hero Section: Welkomstbanner -->
-    <section class="hero-section" id="hero">
-        <div class="container">
-        <div class="hero-content">
-            <div class="hero-profile">
-                <img alt="Profiel foto van Angel Lin - Digitale Vormgever" class="hero-avatar" src="asset/foto_mijzelf.jpg">
-                <div class="hero-text">
-                    <h1 class="hero-title">Angel Lin</h1>
-                    <div class="hero-decoration"></div>
-                    <p class="hero-subtitle">graduaat digitale vormgever 2025-2026</p>
-                </div>
+<main class="container page-content">
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-text">
+            <span class="badge">DIGITAL DESIGNER</span>
+            <h1 id="hero-title">Hallo, Ik ben <span>Angel Lin</span></h1>
+            <div class="hero-buttons">
+                <a class="btn" href="mailto:angel.lin@student.pxl.be">
+                    Neem contact op
+                    <i class="bi bi-send"></i>
+                </a>
+                <a class="btn-outline" href="#projecten">
+                    Bekijk mijn werk
+                    <i class="bi bi-eye"></i>
+                </a>
             </div>
         </div>
+        <div class="hero-image-wrap">
+            <img src="wpl_2_foto's/portfolio_foto.png" alt="Profiel foto van Angel Lin" class="hero-image">
         </div>
     </section>
-    <!-- Einde Hero Section -->
 
-    <!-- Introductie Section -->
-    <section class="intro-section" id="intro">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-person-circle"></i>
-                    Introductie
-                </h2>
-                <p class="section-description">Leer mij kort kennen</p>
-            </div>
-            <article class="intro-card">
-                <p class="intro-text">
-                    Ik ben hier aan het leren en sta altijd open voor nieuwe uitdagingen. Ik werk zowel goed zelfstandig als in
-                    teamverband en durf hulp te vragen wanneer dat nodig is. Daarnaast beschik ik over basisvaardigheden in
-                    ICT en ben ik bereid deze verder te ontwikkelen. Ik koos deze opleiding omdat het mij erg interesseert hoe
-                    ik voor andere mensen een website kan maken of een logo/poster kan ontwerpen. Hierdoor weet ik nog niet
-                    of ik designer of web developer wil worden.
-                </p>
+    <section class="glass-card intro" id="intro">
+        <div class="section-title-wrap">
+            <h2><i class="bi bi-person-circle"></i> Introductie</h2>
+            <p>
+                Ik ben leergierig, werk graag samen en durf om hulp te vragen wanneer dat nodig is.
+                Ik heb bewust gekozen voor de richting Designer omdat ik het fantastisch vind om creatieve
+                ideeen om te zetten in visuele ontwerpen. Ik ontwikkel me continu en sta open voor nieuwe uitdagingen.
+            </p>
+        </div>
+    </section>
+
+    <section class="glass-card" id="vaardigheden">
+        <h2><i class="bi bi-stars"></i> Vaardigheden</h2>
+        <div class="skills-grid">
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>Photoshop</h3>
+                    <img src="wpl_2_foto's/photoshop.png" alt="Photoshop logo">
+                </div>
+                <input type="range" min="1" max="5" value="4" aria-label="Photoshop niveau" disabled>
+                <div class="skill-scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>Illustrator</h3>
+                    <img src="wpl_2_foto's/illustrator.png" alt="Illustrator logo">
+                </div>
+                <input type="range" min="1" max="5" value="4" aria-label="Illustrator niveau" disabled>
+                <div class="skill-scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
             </article>
         </div>
     </section>
-    <!-- Einde Introductie Section -->
 
-    <!-- School Project Section -->
-    <section class="school-project-section" id="school-project">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-code-square"></i>
-                    School Project
-                </h2>
-            </div>
-            <article class="school-project-card">
-                <div class="school-project-content">
-                <div class="project-icon">
-                    <i class="bi bi-laptop"></i>
-                </div>
-                <h3 class="project-title">Scripting Project</h3>
-                <p class="project-detail">Voor het vak Scripting kreeg ik de opdracht om een website te ontwikkelen
-                    voor een restaurantmenu. Mijn rol binnen dit project was het volledig zelf coderen van de website
-                    en het ontwerpen van een aantrekkelijke en overzichtelijke lay-out. Vervolgens presenteerde
-                    ik mijn code aan de leerkracht en deelde ik het project via GitHub, zodat alles transparant gevolgd
-                    en nagekeken kon worden. Ik heb de applicatie WebStorm gebruikt om deze website te maken met JavaScript als hoofddoel.
-                    Vervolgens heb ik ook HTML en CSS gebruikt om de website vorm te geven.
-                </p>
-                
-                <div class="project-toggle-section">
-                    <button id="toggleProjectBtn" class="btn-toggle-project">
-                        <i class="bi bi-eye"></i>
-                        Toon Alle Afbeeldingen
-                    </button>
-                </div>
 
-                <div class="project-images-grid">
-                    <div class="project-image-item school-project">
-                        <div class="project-image-container">
-                            <img src="scripting/scripting_opdracht.png" alt="Scripting Project - Hoofdpagina" class="project-image">
-                        </div>
-                        <p class="image-caption"><strong>Hoofdpagina:</strong> De basis layout van het restaurantmenu met navigatie en menustructuur.</p>
-                    </div>
-                    
-                    <div class="project-image-item school-project" style="display: none;">
-                        <div class="project-image-container">
-                            <img src="scripting/buttons toegevoegd.png" alt="Scripting Project - Buttons toegevoegd" class="project-image">
-                        </div>
-                        <p class="image-caption"><strong>Verschil 1:</strong> Hier zijn interactieve buttons toegevoegd aan de menuitems, waardoor gebruikers items kunnen selecteren en toevoegen aan hun bestelling.</p>
-                    </div>
-                    
-                    <div class="project-image-item school-project" style="display: none;">
-                        <div class="project-image-container">
-                            <img src="scripting/winkelmand_toegevoegd.png" alt="Scripting Project - Winkelmand toegevoegd" class="project-image">
-                        </div>
-                        <p class="image-caption"><strong>Verschil 2:</strong> Een volledig werkende winkelmand is geïmplementeerd, waar geselecteerde items worden verzameld met prijzen en totaalbedrag - dit toont de Javascript functionaliteit.</p>
-                    </div>
-                    
-                    <div class="project-image-item school-project" style="display: none;">
-                        <div class="final-result-banner">
-                            <div class="final-result-badge">
-                                <i class="bi bi-trophy-fill"></i>
-                                <span>Eindresultaat</span>
-                            </div>
-                        </div>
-                        <div class="project-image-container final-result-container">
-                            <img src="scripting/eindresultaat website.png" alt="Scripting Project - Eindresultaat Website" class="project-image">
-                            <div class="final-result-overlay">
-                                <i class="bi bi-check-circle-fill"></i>
-                            </div>
-                        </div>
-                        <p class="image-caption final-result-caption">
-                            <strong><i class="bi bi-star-fill"></i> Het Eindresultaat:</strong> 
-                            Dit is de volledige, werkende website van de scripting opdracht met alle functionaliteiten geïntegreerd. 
-                            Een volledig functioneel restaurantmenu met interactieve elementen, winkelmandfunctionaliteit 
-                            en een professionele gebruikersinterface - het bewijs van mijn Javascript, HTML en CSS vaardigheden!
-                        </p>
+    <section class="glass-card" id="projecten">
+        <h2><i class="bi bi-grid"></i> Projecten</h2>
+        <div class="projects-grid">
+            <article class="project-card project-image-item school-project">
+                <img src="scripting/eindresultaat website.png" alt="Project 1 design" class="project-image">
+                <div class="project-content">
+                    <h3>Website</h3>
+                    <p>Voor scripting moest ik een website maken.</p>
+                    <div class="project-tags">
+                        <span>Scripting</span>
                     </div>
                 </div>
-            </div>
-        </article>
-        </div>
-    </section>
-    <!-- Einde School Project Section -->
+            </article>
 
-    <!-- Niet-school Project Section -->
-    <section class="project-section" id="niet-school-project">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-image"></i>
-                    Niet-school Project
-                </h2>
-                <p class="section-description">Mijn persoonlijke project</p>
-            </div>
-            <div class="projects-wrapper">
-                <article class="project-item">
-                    <div class="project-banner">
-                        <img alt="Vlag ontwerp voor frituur - persoonlijk project" class="banner-image" src="asset/banner.png">
-                    </div>
-                    <div class="project-description">
-                        <p><strong>Vlag Ontwerp</strong></p>
-                        <p>Een vlag voor een frituur ontworpen aan de hand van Photoshop in mijn vrije tijd.</p>
-                    </div>
-                </article>
-
-                <article class="project-item">
-                    <div class="waardebonnen-container">
-                        <div class="project-banner">
-                            <img alt="Waardebon voorkant - Illustrator design" class="banner-image" src="asset/waardebon-voorkant.png">
-                        </div>
-                        <div class="project-banner">
-                            <img alt="Waardebon achterkant - Illustrator design met gradiënt effect" class="banner-image" src="asset/waardebon-achterkant.png">
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p><strong>Waardebon Ontwerp</strong></p>
-                        <p>Een waardebon ontworpen in Illustrator met een gradiënt effect op de achterkant van
-                            de waardebon kaart.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!-- Einde Niet-school Project Section -->
-
-    <!-- Hobbies Section -->
-    <section class="hobbies-section" id="hobbies">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-star-fill"></i>
-                    Mijn Hobbies
-                </h2>
-                <p class="section-description">Wat ik graag doe in mijn vrije tijd</p>
-            </div>
-
-            <div class="hobbies-grid">
-                <article class="hobby-card">
-                <div class="hobby-icon">
-                    <i class="bi bi-music-note-beamed"></i>
+            <article class="project-card project-image-item school-project">
+                <img src="wpl_2_foto's/sociaal_media_asset.png" alt="Decoratieve illustratie" class="intro-image">
+                <div class="project-content">
+                    <h3>Sociaal media asset</h3>
+                    <p>ik moest voor school een campagne asset maken in drie verschillende formaten voor online social
+                        media.</p>
                 </div>
-                <h3 class="hobby-title">Zingen</h3>
-                <p class="hobby-description">Ik hou van zingen en vind het leuk om mijn stem te gebruiken. Ik vind het ook leuk
-                om nieuwe foto's in te voegen wanneer de muziek afspeelt. Wanneer ik soms vrije tijd heb, dan vind ik het leuk om
-                mooie foto's die ik getrokken heb te bewerken met effecten en die in te zetten in mijn muziek.</p>
-                <div class="hobby-image-container">
-                    <img src="hobby/hobby-zingen.png" alt="Hobby - Zingen: Afbeelding van muziekalbumcover met visuele effecten" class="hobby-image">
+                <div class="project-tags">
+                    <span>illustrator</span>
+                    <span>Photoshop</span>
                 </div>
-                <a href="https://wesingapp.com/user/609c95802c2d34883d4c/song/ssWKQHa8dy--vavA-?from=portal" target="_blank" class="music-link">
-                    <i class="bi bi-play-circle-fill"></i> Luister naar mijn muziek
+            </article>
+
+            <article class="project-card project-image-item school-project">
+                <img src="wpl_2_foto's/iconen.png" alt="Project 2 design" class="project-image">
+                <div class="project-content">
+                    <h3>iconen</h3>
+                    <p>Iconenset ontworpen voor een productiviteitsapp. Minimalistisch en gebruiksvriendelijk.</p>
+                </div>
+                <div class="project-tags">
+                    <span>illustrator</span>
+                </div>
+            </article>
+
+            <article class="project-card project-image-item school-project">
+                <img src="wpl_2_foto's/mini_porrtfolio.png" alt="Project 2 design" class="project-image">
+                <div class="project-content">
+                    <h3>mini portfolio</h3>
+                    <p>Iconenset ontworpen voor een productiviteitsapp. Minimalistisch en gebruiksvriendelijk.</p>
+                </div>
+                <div class="project-tags">
+                    <span>Illustrator</span>
+                    <span>Photoshop</span>
+                    <span>Indesign</span>
+                </div>
+                <a class="btn-download" href="wpl_2_foto's/Angel_Lin_Miniportfolio.pdf" target="_blank">
+                    <i class="bi bi-eye"></i>
+                    PDF
                 </a>
             </article>
-        </div>
+
+            <article class="project-card project-image-item school-project">
+                <img src="asset/waardebon-voorkant.png" alt="Project 3 design" class="project-image">
+                <div class="project-content">
+                    <h3>cadeau kaart maken - vrije tijd project</h3>
+                    <p>Campagne concept voor een fastfoodketen met branding, visuals en social media content.</p>
+                </div>
+                <div class="project-tags">
+                    <span>Photoshop</span>
+                </div>
+            </article>
         </div>
     </section>
-<!-- Einde Hobbies Section -->
 
-<!-- Fotogalerij Section -->
-<section class="gallery-section" id="gallery">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">
-                <i class="bi bi-camera-fill"></i>
-                Mijn Fotogalerij
-            </h2>
-            <p class="section-description">Momenten uit mijn leven - visueel verhaal</p>
+    <section class="glass-card" id="WPL2">
+        <div class="section-title-wrap">
+            <h2><i class="bi bi-clock"></i> WPL 2 Case</h2>
+            <h3>Case beschrijving</h3>
+            <p>
+                Ons project was over een tijdregistratie applicatie waar de klant naam is Koen
+            </p>
         </div>
+    </section>
 
-        <div class="gallery-wrapper">
+    <section class="bottom-grid">
+        <article class="glass-card compact-card" id="hobbies">
+            <h2><i class="bi bi-star-fill"></i> Mijn Hobbies</h2>
+            <p class="small-text">Wat ik graag doe in mijn vrije tijd</p>
+            <div class="inner-panel hobby-panel">
+                <img src="hobby/hobby-zingen.png" alt="Illustratie zingen" class="hobby-image">
+                <h3>Zingen</h3>
+                <p>Ik hou van zingen en muziek luisteren. Het helpt me ontspannen en geeft me inspiratie.</p>
+                <a class="btn" href="https://open.spotify.com" target="_blank" rel="noopener">
+                    <i class="bi bi-play-fill"></i>
+                    Luister naar mijn muziek
+                </a>
+            </div>
+        </article>
+
+        <article class="glass-card compact-card" id="gallery">
+            <h2><i class="bi bi-camera-fill"></i> Mijn Fotogalerij</h2>
+            <p class="small-text">Momenten uit mijn leven - visueel verhaal</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-image-wrapper">
-                        <img src="foto's/IMG20251230124537.jpg" alt="Foto 1 uit mijn galerij" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="gallery-btn-expand" aria-label="Vergroten">
-                                <i class="bi bi-zoom-in"></i>
-                            </button>
-                        </div>
+                        <img class="gallery-image" src="foto's/IMG_20250203_173313.jpg" alt="Fotogalerij 1">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 1"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <div class="gallery-image-wrapper">
-                        <img src="foto's/IMG20251230124550.jpg" alt="Foto 2 uit mijn galerij" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="gallery-btn-expand" aria-label="Vergroten">
-                                <i class="bi bi-zoom-in"></i>
-                            </button>
-                        </div>
+                        <img class="gallery-image" src="foto's/IMG_20251030_225608.jpg" alt="Fotogalerij 2">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 2"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <div class="gallery-image-wrapper">
-                        <img src="foto's/IMG20260102162517.jpg" alt="Foto 3 uit mijn galerij" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="gallery-btn-expand" aria-label="Vergroten">
-                                <i class="bi bi-zoom-in"></i>
-                            </button>
-                        </div>
+                        <img class="gallery-image" src="foto's/IMG20251230124537.jpg" alt="Fotogalerij 3">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 3"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <div class="gallery-image-wrapper">
-                        <img src="foto's/IMG_20250203_173313.jpg" alt="Foto 4 uit mijn galerij" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="gallery-btn-expand" aria-label="Vergroten">
-                                <i class="bi bi-zoom-in"></i>
-                            </button>
-                        </div>
+                        <img class="gallery-image" src="foto's/IMG20251230124550.jpg" alt="Fotogalerij 4">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 4"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                 </div>
-
                 <div class="gallery-item">
                     <div class="gallery-image-wrapper">
-                        <img src="foto's/IMG_20251030_225608.jpg" alt="Foto 5 uit mijn galerij" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="gallery-btn-expand" aria-label="Vergroten">
-                                <i class="bi bi-zoom-in"></i>
-                            </button>
-                        </div>
+                        <img class="gallery-image" src="foto's/IMG20260102162517.jpg" alt="Fotogalerij 5">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 5"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="asset/banner.png" alt="Fotogalerij 6">
+                        <button class="gallery-btn-expand" type="button" aria-label="Vergroot foto 6"><i
+                                class="bi bi-arrows-fullscreen"></i></button>
                     </div>
                 </div>
             </div>
-        </div>
+            <a class="btn-outline wide-btn" href="#gallery">Bekijk alle foto's <i class="bi bi-arrow-right"></i></a>
+        </article>
 
-        <!-- Lightbox modal voor vergrote foto's -->
-        <div class="lightbox" id="lightbox">
-            <button class="lightbox-close" aria-label="Sluiten">
-                <i class="bi bi-x-lg"></i>
-            </button>
-            <button class="lightbox-prev" aria-label="Vorige foto">
-                <i class="bi bi-chevron-left"></i>
-            </button>
-            <img src="" alt="Vergrote foto" class="lightbox-image">
-            <button class="lightbox-next" aria-label="Volgende foto">
-                <i class="bi bi-chevron-right"></i>
-            </button>
-            <div class="lightbox-counter">
-                <span class="lightbox-current">1</span>
-                <span>/</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Einde Fotogalerij Section -->
-
-    <!-- Portfolio Section -->
-    <section class="portfolio-section" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-folder2-open"></i>
-                    Mijn Portfolio
-                </h2>
-                <p class="section-description">Bekijk en download mijn werkplekleren documenten</p>
-            </div>
-
-            <article class="intro-card">
-                <p class="intro-text">Mijn portfolio staat nu op een aparte pagina. Klik op de knop hieronder om hem te openen.</p>
-                <a class="btn-download" href="portfolio.html">
-                    <i class="bi bi-box-arrow-up-right"></i>
+        <article class="glass-card compact-card" id="portfolio">
+            <h2><i class="bi bi-folder2-open"></i> Mijn Portfolio</h2>
+            <p class="small-text">Bekijk en download mijn werkstukken en documenten</p>
+            <div class="inner-panel portfolio-panel">
+                <i class="bi bi-folder-fill folder-icon"></i>
+                <p>Mijn portfolio staat nu op een aparte pagina.</p>
+                <a class="btn" href="portfolio.html">
                     Open portfolio pagina
+                    <i class="bi bi-arrow-right"></i>
                 </a>
-            </article>
-        </div>
+            </div>
+        </article>
     </section>
-    <!-- Einde Portfolio Section -->
-
 </main>
-<!-- EINDE MAIN -->
 
-<!-- FOOTER: Contact informatie en copyright -->
-<footer class="footer" id="footer">
-    <div class="container footer-content">
-        <div class="footer-left">
-            <a href="tel:0485005138" class="footer-phone">
-                <i class="bi bi-telephone-fill"></i>
-                0485 005 138
-            </a>
-            <a href="mailto:angel.lin@student.pxl.be" class="footer-email">
-                <i class="bi bi-envelope-fill"></i>
-                angel.lin@student.pxl.be
-            </a>
+<footer class="site-footer" id="footer">
+    <div class="container footer-top">
+        <a href="tel:0465006188"><i class="bi bi-telephone-fill"></i> 0465 006 188</a>
+        <a href="mailto:angel.lin@student.pxl.be"><i class="bi bi-envelope"></i> angel.lin@student.pxl.be</a>
+        <div class="socials">
+            <a href="#" aria-label="Behance"><i class="bi bi-behance"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Angel Lin - Werkplekleren Portfolio</p>
-    </div>
+    <p class="footer-bottom">&copy; 2026 Angel Lin - Graphic Designer Portfolio</p>
 </footer>
 
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Sluit lightbox"><i class="bi bi-x-lg"></i></button>
+    <button class="lightbox-prev" type="button" aria-label="Vorige foto"><i class="bi bi-chevron-left"></i></button>
+    <img class="lightbox-image" src="" alt="Vergrote foto">
+    <button class="lightbox-next" type="button" aria-label="Volgende foto"><i class="bi bi-chevron-right"></i></button>
+    <div class="lightbox-counter"><span class="lightbox-current">1</span> / <span class="lightbox-total">1</span></div>
+</div>
 </body>
 </html>

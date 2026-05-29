@@ -9,7 +9,6 @@ function initializeProfileMenu() {
     const menu = document.querySelector('.profile-menu');
 
     if (!toggle || !menu) {
-        console.warn('Profile menu elements not found');
         return;
     }
 
@@ -43,7 +42,6 @@ function initializeProjectToggle() {
     const toggleBtn = document.getElementById('toggleProjectBtn');
 
     if (!toggleBtn) {
-        console.warn('Toggle project button not found');
         return;
     }
 
@@ -51,9 +49,18 @@ function initializeProjectToggle() {
     const projectImages = document.querySelectorAll('.project-image-item.school-project');
 
     if (projectImages.length === 0) {
-        console.warn('No project images found');
         return;
     }
+
+    // Keep only the first project visible by default to match the toggle behavior.
+    projectImages.forEach((item, index) => {
+        if (index === 0) {
+            item.style.display = 'block';
+            return;
+        }
+        item.style.display = 'none';
+    });
+    toggleBtn.setAttribute('aria-expanded', 'false');
 
     toggleBtn.addEventListener('click', () => {
         isShowing = !isShowing;
@@ -66,6 +73,7 @@ function initializeProjectToggle() {
             item.style.display = isShowing ? 'block' : 'none';
         });
 
+        toggleBtn.setAttribute('aria-expanded', String(isShowing));
         updateToggleButton(toggleBtn, isShowing);
     });
 }
@@ -88,20 +96,28 @@ function initializeGallery() {
     const lightboxCurrent = document.querySelector('.lightbox-current');
     const lightboxTotal = document.querySelector('.lightbox-total');
 
-    if (!galleryItems.length || !lightbox) {
-        console.warn('Gallery elements not found');
+    if (!galleryItems.length || !lightbox || !lightboxImage) {
         return;
     }
 
     let currentImageIndex = 0;
     const images = Array.from(galleryItems).map(item => {
         const img = item.querySelector('.gallery-image');
+
+        if (!img) {
+            return null;
+        }
+
         return {
             src: img.src,
             alt: img.alt,
             element: img
         };
-    });
+    }).filter(Boolean);
+
+    if (!images.length) {
+        return;
+    }
 
     // Update total count in lightbox
     if (lightboxTotal) {

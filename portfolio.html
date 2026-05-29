@@ -5,102 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio documenten van Angel Lin - Werkplekleren.">
     <title>Portfolio Documenten | Angel Lin</title>
-    <link href="asset/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="index_css.css?v=20260112-1" rel="stylesheet">
+    <link href="index_css.css?v=20260529-1" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 <body>
 <!-- HEADER: Navigatie -->
-<header class="site-nav">
-    <div class="container nav-inner">
-        <div class="nav-profile">
-            <a class="nav-brand" href="Index.html#hero">
-                <img alt="Profiel foto van Angel Lin" class="nav-avatar" src="asset/foto_mijzelf.jpg">
-                <span>Angel Lin</span>
-            </a>
-            <button aria-expanded="false" aria-haspopup="true" aria-label="Open profiel menu" class="profile-toggle">
-                <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <nav class="profile-menu" role="menu">
-                <a href="Index.html#intro" role="menuitem">Introductie</a>
-                <a href="portfolio.html" role="menuitem">Portfolio</a>
-                <a href="Index.html#school-project" role="menuitem">School Project</a>
-                <a href="Index.html#niet-school-project" role="menuitem">Niet-school Project</a>
-                <a href="Index.html#hobbies" role="menuitem">Hobbies</a>
-                <a href="Index.html#gallery" role="menuitem">Fotogalerij</a>
-                <a href="Index.html#footer" role="menuitem">Footer</a>
-            </nav>
-        </div>
-    </div>
+<header class="site-header" id="home">
+    <nav class="navbar container">
+        <a class="logo" href="Index.html#home">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Angel Lin</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="Index.html#home">Home</a></li>
+            <li><a href="Index.html#intro">Over mij</a></li>
+            <li><a href="Index.html#vaardigheden">Vaardigheden</a></li>
+            <li><a href="Index.html#projecten">Projecten</a></li>
+            <li><a href="Index.html#hobbies">Hobbies</a></li>
+            <li><a href="Index.html#gallery">Fotogalerij</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+
+        <a class="btn contact-btn" href="mailto:angel.lin@student.pxl.be">
+            Contact opnemen
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </nav>
 </header>
 
 <!-- MAIN: Hoofd content van de pagina -->
-<main>
+<main class="container page-content">
     <!-- Portfolio Section -->
-    <section class="portfolio-section" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <i class="bi bi-folder2-open"></i>
-                    Mijn Portfolio
-                </h2>
-                <p class="section-description">Bekijk en download mijn werkplekleren documenten</p>
-            </div>
+    <section class="glass-card" id="portfolio">
+        <h2><i class="bi bi-folder2-open"></i> Mijn Portfolio</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Bekijk en download mijn werkplekleren documenten</p>
 
-            <div class="row g-5">
-                <div class="col-md-6 mb-4">
-                    <article class="document-card">
-                        <div class="document-icon">
-                            <i class="bi bi-file-earmark-word-fill"></i>
-                        </div>
-                        <div class="document-content">
-                            <h3 class="document-title">DVO OLR</h3>
-                            <p class="document-description">Ontwikkelingsplan</p>
-                            <div class="btn-group">
-                                <a class="btn-download" download href="portfolio/DVO OLR.docx">
-                                    <i class="bi bi-download"></i>
-                                    Word
-                                </a>
-                                <a class="btn-download" href="portfolio/DVO OLR_PDF.pdf" target="_blank">
-                                    <i class="bi bi-eye"></i>
-                                    PDF
-                                </a>
-                                <a class="btn-download" download href="portfolio/DVO OLR_PDF.pdf">
-                                    <i class="bi bi-download"></i>
-                                    PDF DL
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+        <div class="portfolio-grid">
+            <article class="portfolio-document-card">
+                <div class="document-icon">
+                    <i class="bi bi-file-earmark-word-fill"></i>
                 </div>
+                <div class="document-info">
+                    <h3>DVO OLR</h3>
+                    <p>Ontwikkelingsplan</p>
+                </div>
+                <div class="document-actions">
+                    <a class="btn-doc" download href="portfolio/DVO OLR.docx" title="Download Word">
+                        <i class="bi bi-download"></i>
+                    </a>
+                    <a class="btn-doc" href="portfolio/DVO OLR_PDF.pdf" target="_blank" title="View PDF">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </article>
 
-                <div class="col-md-6 mb-4">
-                    <article class="document-card">
-                        <div class="document-icon">
-                            <i class="bi bi-file-earmark-word-fill"></i>
-                        </div>
-                        <div class="document-content">
-                            <h3 class="document-title">Eindreflectie WPL1 DVO</h3>
-                            <p class="document-description">Reflectie document</p>
-                            <div class="btn-group">
-                                <a class="btn-download" download href="portfolio/Eindreflectie WPL1 DVO.docx">
-                                    <i class="bi bi-download"></i>
-                                    Word
-                                </a>
-                                <a class="btn-download" href="portfolio/Eindreflectie WPL1 DVO.pdf" target="_blank">
-                                    <i class="bi bi-eye"></i>
-                                    PDF
-                                </a>
-                                <a class="btn-download" download href="portfolio/Eindreflectie WPL1 DVO.pdf">
-                                    <i class="bi bi-download"></i>
-                                    PDF DL
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+            <article class="portfolio-document-card">
+                <div class="document-icon">
+                    <i class="bi bi-file-earmark-word-fill"></i>
                 </div>
-            </div>
+                <div class="document-info">
+                    <h3>Eindreflectie WPL1 DVO</h3>
+                    <p>Reflectie document</p>
+                </div>
+                <div class="document-actions">
+                    <a class="btn-doc" download href="portfolio/Eindreflectie WPL1 DVO.docx" title="Download Word">
+                        <i class="bi bi-download"></i>
+                    </a>
+                    <a class="btn-doc" href="portfolio/Eindreflectie WPL1 DVO.pdf" target="_blank" title="View PDF">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="portfolio-document-card">
+                <div class="document-icon">
+                    <i class="bi bi-file-earmark-word-fill"></i>
+                </div>
+                <div class="document-info">
+                    <h3>WPL2 Eindreflectie</h3>
+                    <p>Eindreflectie document</p>
+                </div>
+                <div class="document-actions">
+                    <a class="btn-doc" download href="Wpl 2/Opdracht eindreflectie WPL2_Lin_Angel.docx" title="Download Word">
+                        <i class="bi bi-download"></i>
+                    </a>
+                    <a class="btn-doc" href="Wpl 2/Opdracht eindreflectie WPL2_Lin_Angel.pdf" target="_blank" title="View PDF">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </div>
+            </article>
         </div>
     </section>
     <!-- Einde Portfolio Section -->
@@ -109,22 +106,17 @@
 <!-- EINDE MAIN -->
 
 <!-- FOOTER: Contact informatie en copyright -->
-<footer class="footer" id="footer">
-    <div class="container footer-content">
-        <div class="footer-left">
-            <a href="tel:0485005138" class="footer-phone">
-                <i class="bi bi-telephone-fill"></i>
-                0485 005 138
-            </a>
-            <a href="mailto:angel.lin@student.pxl.be" class="footer-email">
-                <i class="bi bi-envelope-fill"></i>
-                angel.lin@student.pxl.be
-            </a>
+<footer class="site-footer" id="footer">
+    <div class="container footer-top">
+        <a href="tel:0465006188"><i class="bi bi-telephone-fill"></i> 0465 006 188</a>
+        <a href="mailto:angel.lin@student.pxl.be"><i class="bi bi-envelope"></i> angel.lin@student.pxl.be</a>
+        <div class="socials">
+            <a href="#" aria-label="Behance"><i class="bi bi-behance"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Angel Lin - Werkplekleren Portfolio</p>
-    </div>
+    <p class="footer-bottom">&copy; 2026 Angel Lin - Graphic Designer Portfolio</p>
 </footer>
 </body>
 </html>
